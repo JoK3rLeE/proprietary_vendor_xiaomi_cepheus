@@ -21,7 +21,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm: {
             srcs: [
-                "proprietary/vendor/lib/hw/audio.primary.cepheus.so",
+                "proprietary/vendor/lib/hw/audio.primary.msmnile.so",
             ],
             shared_libs: [
                 "libbase",
@@ -29,7 +29,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libtinyalsa",
                 "libtinycompress",
-                "libaudioroute",
+                "libaudioroute-v34",
                 "libaudioutils",
                 "libexpat",
                 "libhidlbase",
@@ -37,6 +37,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libaudioroute_ext",
                 "libhardware_legacy",
+                "libresampler",
                 "libaudio_log_utils",
                 "vendor.qti.hardware.audiohalext@1.0",
                 "android.hardware.power@1.2",
@@ -240,7 +241,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libtinyalsa",
-                "libaudioroute",
+                "libaudioroute-v34",
                 "libexpat",
                 "libc++",
                 "libc",
@@ -253,6 +254,32 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
+cc_prebuilt_library_shared {
+    name: "libresampler",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libresampler.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
 
 cc_prebuilt_library_shared {
     name: "libdrc",

@@ -174,7 +174,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cepheus/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
 
 PRODUCT_PACKAGES += \
-    audio.primary.cepheus \
+    audio.primary.msmnile \
     vendor.qti.hardware.audiohalext@1.0-impl \
     liba2dpoffload_cepheus \
     libadm \
