@@ -13,7 +13,7 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "audio.primary.cepheus",
+    name: "audio.primary.msmnile",
     owner: "xiaomi",
     strip: {
         none: true,

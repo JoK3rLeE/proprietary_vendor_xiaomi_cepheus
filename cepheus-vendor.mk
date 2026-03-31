@@ -183,6 +183,7 @@ PRODUCT_PACKAGES += \
     libaudioroute_ext \
     libdrc \
     libhdmipassthru \
+    libresampler \
     libssrec \
     libsurround_3mic_proc \
     vendor.qti.hardware.audiohalext@1.0 \
