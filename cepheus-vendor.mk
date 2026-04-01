@@ -174,7 +174,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     audio.primary.msmnile \
     vendor.qti.hardware.audiohalext@1.0-impl \
-    liba2dpoffload_cepheus \
+    liba2dpoffload \
     libadm \
     libaudio_log_utils \
     libaudioconfigstore \
